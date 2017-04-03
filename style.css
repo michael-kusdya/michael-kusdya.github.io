@@ -1,4 +1,28 @@
+	@media all and (max-width: 1200px) {
+	/* screen size until 1200px */
 	body {
+		font-size: 1.5em;
+		/* 1.5x default size */
+	}
+}
+
+@media all and (max-width: 1000px) {
+	/* screen size until 1000px */
+	body {
+		font-size: 1.2em;
+		/* 1.2x default size */
+	}
+}
+
+@media all and (max-width: 500px) {
+	/* screen size until 500px */
+	body {
+		font-size: 1.0em;
+		/* 0.8x default size */
+	}
+}
+
+body {
 	font-family: 'Raleway', sans-serif;
 	/*   overflow-x: hidden; */
 }
@@ -13,16 +37,25 @@ a:hover {
 	vertical-align: top;
 }
 
+#skills {
+	font-size: 6em;
+	text-align: center;
+	margin: auto;
+	padding: 50px 80px;
+}
+
 #skills h3 {
 	text-align: center;
 	font-weight: 700;
-	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
-#skills .container {
-	font-size: 6em;
-	margin: auto;
-	padding: 50px 80px;
+#skill .row {
+	padding-bottom: 50px;
+}
+
+#skills i {
+	margin: 15px;
 }
 
 .navbar .navbar-collapse {
@@ -86,7 +119,7 @@ hr {
 }
 
 #about {
-	background-color: #233953;
+	background-color: #003D6B;
 	padding: 160px 0;
 }
 
@@ -101,10 +134,9 @@ hr {
 	margin-bottom: 50px;
 }
 
-
 #portfolio {
 	/*   padding: 30px 200px; */
-	background-color: #05c1af;
+	background-color: #79C5FF;
 	height: auto;
 	overflow: auto;
 }
@@ -179,6 +211,12 @@ hr {
 	height: 300px;
 	text-align: center;
 	/*   top: 20px; */
+}
+
+@media screen and (max-width: 375px) {
+	.caption-text {
+		padding-left: 110px;
+	}
 }
 
 #contact {
