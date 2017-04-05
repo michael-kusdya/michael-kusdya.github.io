@@ -1,6 +1,107 @@
-$background-color: #ebebeb;
 body {
-    background: $background-color;
+    font-family: 'Raleway', sans-serif;
+    /*   overflow-x: hidden; */
+    @media all and (max-width: 1200px) {
+        /* screen size until 1200px */
+
+        font-size: 1.5em;
+        /* 1.5x default size */
+    }
+    @media all and (max-width: 1000px) {
+        /* screen size until 1000px */
+        font-size: 1.2em;
+        /* 1.2x default size */
+    }
+    @media all and (max-width: 500px) {
+        /* screen size until 500px */
+        font-size: 1.0em;
+        /* 0.8x default size */
+    }
+}
+
+.navbar {
+    .navbar-brand {
+        font-size: 1.7em;
+        color: #3cc4d1;
+    }
+    .nav {
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        li a:hover{
+            background: white;
+            color: black
+        }
+        li a:focus{
+            outline: none;
+            background: #222;
+            color: white;
+        }
+    }
+    .nav-pills {
+        font-size: 1.4em;
+        li.active>a,
+        .nav-pills>li.active>a:focus {
+            background: white;
+            color: black;
+        }
+    }
+    .nav-pills:active {
+        color: black;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .nav-link{
+        color: white;
+    }
+}
+
+
+
+#about {
+    background-color: #003D6B;
+    padding: 160px 0;
+    #desc {
+        margin: 0px 50px 0px 50px;
+        color: #c0c0c0;
+        font-size: 1.5em
+    }
+    #profile {
+        max-width: 25%;
+        border-radius: 65%;
+        margin-bottom: 50px;
+    }
+    #icons a {
+        font-size: 4em !important;
+        margin: auto;
+        transition: color .5s;
+        padding: 10px;
+        cursor: pointer;
+        color: #bcc748;
+        .fa-linkedin:hover {
+            color: #0077B5;
+            transition: color .5s;
+        }
+        .fa-envelope-o:hover {
+            color: #c71610;
+            transition: color .5s;
+        }
+        .fa-twitter:hover {
+            color: #00aced;
+            transition: color .5s;
+        }
+        .fa-github:hover {
+            color: #fafafa;
+            transition: color .5s;
+        }
+    }
+}
+
+hr {
+    border-top: 4px double #8c8b8b;
+    width: 60%;
+    margin: 40px auto;
 }
 
 #skills {
@@ -8,7 +109,7 @@ body {
     text-align: center;
     margin: auto;
     padding: 50px 80px;
-    h3 {
+    #skills-header {
         text-align: center;
         font-weight: 700;
         margin-bottom: 50px;
@@ -25,8 +126,106 @@ body {
     background-color: #79C5FF;
     height: auto;
     overflow: auto;
-    h1 {
+    #portfolio-header {
         color: white;
         font-weight: 700;
+    }
+}
+
+.caption-style-2 {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    li {
+        display: inline-block;
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+        margin: 20px;
+    }
+    li:hover .caption {
+        opacity: 1;
+        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+    }
+    img {
+        padding: 0px;
+        float: left;
+        z-index: 4;
+        width: 400px;
+        height: 300px;
+        /*   margin:20px; */
+    }
+    .caption {
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        top: 300px;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+        -ms-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+    }
+    .blur {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 300px;
+        width: 400px;
+        z-index: 5;
+        position: absolute;
+    }
+    .caption-text h1 {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .caption-text {
+        z-index: 10;
+        color: #fff;
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        text-align: center;
+        /*   top: 20px; */
+    }
+}
+
+#contact {
+    padding: 60px 0;
+    #contact-header {
+        font-weight: 700;
+        text-align: center;
+    }
+    #submit-btn {
+        background: #3cc4d1;
+    }
+    #submit-btn:hover,
+    #submit-btn:focus {
+        background: #309ca7;
+        color: white;
+    }
+}
+
+.btn {
+    // background: #3cc4d1;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+footer {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+    background: #2C3E50;
+    font-weight: 700;
+    a {
+        color: white
+    }
+    a:hover {
+        color: #3cc4d1;
     }
 }

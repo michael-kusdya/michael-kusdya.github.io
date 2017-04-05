@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 	<title>Michael J Kusdya - Portfolio Page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+	<!--navbar section-->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -27,10 +28,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-nav">
 				<ul class="nav navbar-right nav-pills">
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about" class="nav-link">About</a></li>
+					<li><a href="#skills" class="nav-link">Skills</a></li>
+					<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+					<li><a href="#contact" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -42,13 +43,13 @@
 		<div class="text-center">
 			<img id="profile" src="http://res.cloudinary.com/mjkno1/image/upload/v1489118756/jBZsSVy_jnouxe_iyxcks.jpg" alt="photo">
 		</div>
-		<div class="desc">
+		<div id="desc">
 			<p class="text-center"><strong>I'm a self-taught Front-End Developer form Jakarta, Indonesia. Currently learning technologies needed for front-end development and constanly learning new stuff in order to become a solid front-end developer.</strong></p>
 		</div>
 		<hr>
 		<div class="container">
 			<div class="row">
-				<div class="icons col-xs-12 col-md-12 text-center">
+				<div class="col-xs-12 col-md-12 text-center" id="icons">
 					<a target="_blank" href="https://github.com/michael-kusdya"><i class="fa fa-github"></i></a>
 					<a target="_blank" href="https://www.linkedin.com/in/michael-kusdya-07871a132"><i class="fa fa-linkedin"></i></a>
 					<a href="mailto:michael.kusdya@gmail.com"><i class="fa fa-envelope-o"></i></a>
@@ -60,26 +61,30 @@
 	</div>
 	<!-- about section end-->
 
+	<!--skills section-->
 	<div id="skills">
-	<div class="container">
-		<h3>- S K I L L S - </h3>
-		<div class="row">
-			<i class="devicon-html5-plain-wordmark"></i>
-			<i class="devicon-css3-plain-wordmark"></i>
-			<i class="devicon-javascript-plain"></i>
-			<i class="devicon-jquery-plain-wordmark"></i>
-			<i class="devicon-bootstrap-plain-wordmark"></i>
-			<i class="devicon-nodejs-plain-wordmark"></i>
-			<i class="devicon-mongodb-plain-wordmark"></i>
-			<i class="devicon-git-plain-wordmark"></i>
+		<div class="container">
+			<h3 id="skills-header">- S K I L L S - </h3>
+			<div class="row">
+				<i class="devicon-html5-plain-wordmark"></i>
+				<i class="devicon-css3-plain-wordmark"></i>
+				<i class="devicon-javascript-plain"></i>
+				<i class="devicon-jquery-plain-wordmark"></i>
+				<i class="devicon-bootstrap-plain-wordmark"></i>
+				<i class="devicon-gulp-plain"></i>
+				<i class="devicon-sass-original"></i>
+				<i class="devicon-nodejs-plain-wordmark"></i>
+				<i class="devicon-mongodb-plain-wordmark"></i>
+				<i class="devicon-git-plain-wordmark"></i>
+			</div>
 		</div>
 	</div>
+	<!--skills section end-->
 
-	</div>
-
+	<!--portfolio section-->
 	<div id="portfolio">
 		<div class="container-a2">
-			<h1 class="text-center">- P O R T F O L I O -</h1>
+			<h1 class="text-center" id="portfolio-header">- P O R T F O L I O -</h1>
 			<ul class="caption-style-2">
 				<li>
 					<img class="img-responsive" src="http://res.cloudinary.com/mjkno1/image/upload/v1488888866/quotes_aveqdi.jpg" alt="Quotes Generator">
@@ -137,7 +142,8 @@
 					</div>
 				</li>
 				<li>
-					<img class="img-responsive" src="http://res.cloudinary.com/mjkno1/image/upload/c_scale,h_440,w_660/v1488961741/placeholder_vq8nfq.gif" alt="Placeholder">
+					<img class="img-responsive" src="http://res.cloudinary.com/mjkno1/image/upload/c_scale,h_440,w_660/v1488961741/placeholder_vq8nfq.gif"
+					    alt="Placeholder">
 					<div class="caption">
 						<div class="blur"></div>
 						<div class="caption-text">
@@ -148,18 +154,18 @@
 			</ul>
 		</div>
 	</div>
+	<!--portfolio section end-->
 
-	<div class="col-md-4"></div>
-
+	<!--contact section-->
 	<div id="contact">
 		<div class="container">
-			<h1>Contact Me</h1>
+			<h1 id="contact-header">Contact Me</h1>
 			<form action="https://formspree.io/michael.kusdya@gmail.com" method="POST">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-md-offset-3 col-sm-offset-3">
 						<div class="form-group">
 							<label for="name">Name</label>
-							<input type="text" class="form-control" id="namehere" placeholder="Your Name" required>
+							<input type="text" class="form-control" id="name" placeholder="Your Name" required>
 						</div>
 					</div>
 				</div>
@@ -180,7 +186,7 @@
 							<label for="message">Message</label>
 							<textarea id="message" name="msg" class="form-control" rows="4" placeholder="Your Message" required></textarea>
 						</div>
-						<button input type="submit" value="Send" class="btn btn-default center">Submit</button>
+						<button input type="submit" value="Send" class="btn btn-default center" id="submit-btn">Submit</button>
 
 					</div>
 				</div>
@@ -188,10 +194,12 @@
 
 		</div>
 	</div>
+	<!--contact section end-->
 
+	<!--footer section-->
 	<footer>
 		<div class="container">
-			<span class="pull-left">&copy; 2017, Michael J Kusdya</span>
+			<span class="pull-left">&copy; 2017, <a href="https://github.com/michael-kusdya/"> Michael J Kusdya</a></span>
 			<span class="pull-right">
 			<a href="#about">
 				<i class="fa fa-arrow-circle-o-up"></i> Back to Top
