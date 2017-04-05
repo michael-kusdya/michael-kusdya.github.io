@@ -3,7 +3,6 @@ body {
     /*   overflow-x: hidden; */
     @media all and (max-width: 1200px) {
         /* screen size until 1200px */
-
         font-size: 1.5em;
         /* 1.5x default size */
     }
@@ -23,16 +22,17 @@ body {
     .navbar-brand {
         font-size: 1.7em;
         color: #3cc4d1;
+        letter-spacing: 1.5px;
     }
     .nav {
         display: inline-block;
         vertical-align: top;
         color: white;
-        li a:hover{
+        li a:hover {
             background: white;
             color: black
         }
-        li a:focus{
+        li a:focus {
             outline: none;
             background: #222;
             color: white;
@@ -52,12 +52,11 @@ body {
     .navbar-collapse {
         text-align: center;
     }
-    .nav-link{
+    .nav-link {
         color: white;
+        letter-spacing: 2px;
     }
 }
-
-
 
 #about {
     background-color: #003D6B;
@@ -70,12 +69,11 @@ body {
     #profile {
         max-width: 25%;
         border-radius: 65%;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     #icons a {
         font-size: 4em !important;
         margin: auto;
-        transition: color .5s;
         padding: 10px;
         cursor: pointer;
         color: #bcc748;
@@ -109,7 +107,7 @@ hr {
     text-align: center;
     margin: auto;
     padding: 50px 80px;
-    #skills-header {
+    .skills-header {
         text-align: center;
         font-weight: 700;
         margin-bottom: 50px;
@@ -119,6 +117,10 @@ hr {
     }
     i {
         margin: 15px;
+        transition: color .5s;
+    }
+    i:hover {
+        color: #00aced;
     }
 }
 
@@ -129,6 +131,11 @@ hr {
     #portfolio-header {
         color: white;
         font-weight: 700;
+        margin: 50px 0 30px 0;
+    }
+    .project-title{
+        font-weight: 700;
+        letter-spacing: 2px;
     }
 }
 
@@ -193,10 +200,10 @@ hr {
 }
 
 #contact {
-    padding: 60px 0;
     #contact-header {
         font-weight: 700;
         text-align: center;
+        margin: 50px 0;
     }
     #submit-btn {
         background: #3cc4d1;

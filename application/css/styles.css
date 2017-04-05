@@ -19,7 +19,8 @@ body {
 
 .navbar .navbar-brand {
   font-size: 1.7em;
-  color: #3cc4d1; }
+  color: #3cc4d1;
+  letter-spacing: 1.5px; }
 
 .navbar .nav {
   display: inline-block;
@@ -47,7 +48,8 @@ body {
   text-align: center; }
 
 .navbar .nav-link {
-  color: white; }
+  color: white;
+  letter-spacing: 2px; }
 
 #about {
   background-color: #003D6B;
@@ -59,11 +61,10 @@ body {
   #about #profile {
     max-width: 25%;
     border-radius: 65%;
-    margin-bottom: 50px; }
+    margin-bottom: 100px; }
   #about #icons a {
     font-size: 4em !important;
     margin: auto;
-    transition: color .5s;
     padding: 10px;
     cursor: pointer;
     color: #bcc748; }
@@ -90,14 +91,17 @@ hr {
   text-align: center;
   margin: auto;
   padding: 50px 80px; }
-  #skills #skills-header {
+  #skills .skills-header {
     text-align: center;
     font-weight: 700;
     margin-bottom: 50px; }
   #skills .row {
     padding-bottom: 50px; }
   #skills i {
-    margin: 15px; }
+    margin: 15px;
+    transition: color .5s; }
+  #skills i:hover {
+    color: #00aced; }
 
 #portfolio {
   background-color: #79C5FF;
@@ -105,7 +109,11 @@ hr {
   overflow: auto; }
   #portfolio #portfolio-header {
     color: white;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 50px 0 30px 0; }
+  #portfolio .project-title {
+    font-weight: 700;
+    letter-spacing: 2px; }
 
 .caption-style-2 {
   list-style-type: none;

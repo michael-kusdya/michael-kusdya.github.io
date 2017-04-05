@@ -7,6 +7,7 @@
 	<title>Michael J Kusdya - Portfolio Page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
@@ -30,7 +31,7 @@
 				<ul class="nav navbar-right nav-pills">
 					<li><a href="#about" class="nav-link">About</a></li>
 					<li><a href="#skills" class="nav-link">Skills</a></li>
-					<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+					<li><a href="#portfolio" class="nav-link">Projects</a></li>
 					<li><a href="#contact" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
@@ -44,7 +45,7 @@
 			<img id="profile" src="http://res.cloudinary.com/mjkno1/image/upload/v1489118756/jBZsSVy_jnouxe_iyxcks.jpg" alt="photo">
 		</div>
 		<div id="desc">
-			<p class="text-center"><strong>I'm a self-taught Front-End Developer form Jakarta, Indonesia. Currently learning technologies needed for front-end development and constanly learning new stuff in order to become a solid front-end developer.</strong></p>
+			<p class="text-center"><strong>I'm a self-taught Front-End Developer based in Jakarta, Indonesia. Currently learning technologies needed for front-end development and constanly learning new stuff in order to become a solid front-end developer.</strong></p>
 		</div>
 		<hr>
 		<div class="container">
@@ -64,7 +65,7 @@
 	<!--skills section-->
 	<div id="skills">
 		<div class="container">
-			<h3 id="skills-header">- S K I L L S - </h3>
+			<h3 class="skills-header"> S K I L L S </h3>
 			<div class="row">
 				<i class="devicon-html5-plain-wordmark"></i>
 				<i class="devicon-css3-plain-wordmark"></i>
@@ -73,9 +74,13 @@
 				<i class="devicon-bootstrap-plain-wordmark"></i>
 				<i class="devicon-gulp-plain"></i>
 				<i class="devicon-sass-original"></i>
+				<i class="devicon-git-plain-wordmark"></i>
+				<i class="devicon-github-plain-wordmark"></i>
+			</div>
+			<h3 class="skills-header">L E A R N I N G</h3>
+			<div class="row">
 				<i class="devicon-nodejs-plain-wordmark"></i>
 				<i class="devicon-mongodb-plain-wordmark"></i>
-				<i class="devicon-git-plain-wordmark"></i>
 			</div>
 		</div>
 	</div>
@@ -84,14 +89,14 @@
 	<!--portfolio section-->
 	<div id="portfolio">
 		<div class="container-a2">
-			<h1 class="text-center" id="portfolio-header">- P O R T F O L I O -</h1>
+			<h1 class="text-center" id="portfolio-header">- P R O J E C T S -</h1>
 			<ul class="caption-style-2">
 				<li>
 					<img class="img-responsive" src="http://res.cloudinary.com/mjkno1/image/upload/v1488888866/quotes_aveqdi.jpg" alt="Quotes Generator">
 					<div class="caption">
 						<div class="blur"></div>
 						<div class="caption-text">
-							<h1>Friends Quotes Generator</h1>
+							<h1 class="project-title">Friends Quotes Generator</h1>
 							<a class="btn btn-primary" target="_blank" href="">View Demo</a>
 							<a class="btn btn-primary" href="https://github.com/michael-kusdya/friends-quotes-generator">View Source</a>
 						</div>
@@ -102,7 +107,7 @@
 					<div class="caption">
 						<div class="blur"></div>
 						<div class="caption-text">
-							<h1>Guess The Color Game</h1>
+							<h1 class="project-title">Guess The Color Game</h1>
 							<a class="btn btn-primary" target="_blank" href="https://michael-kusdya.github.io/guess-the-color/">View Demo</a>
 							<a class="btn btn-primary" target="_blank" href="https://github.com/michael-kusdya/guess-the-color">View Source</a>
 						</div>
@@ -113,7 +118,7 @@
 					<div class="caption">
 						<div class="blur"></div>
 						<div class="caption-text">
-							<h1>Weather App</h1>
+							<h1 class="project-title">Weather App</h1>
 							<a class="btn btn-primary" target="_blank" href="https://michael-kusdya.github.io/weather-app/">View Demo</a>
 							<a class="btn btn-primary" target="_blank" href="https://github.com/michael-kusdya/weather-app">View Source</a>
 						</div>
@@ -124,7 +129,7 @@
 					<div class="caption">
 						<div class="blur"></div>
 						<div class="caption-text">
-							<h1>JavaScript Calculator</h1>
+							<h1 class="project-title">JavaScript Calculator</h1>
 							<a class="btn btn-primary" target="_blank" href="https://michael-kusdya.github.io/javascript-calculator/">View Demo</a>
 							<a class="btn btn-primary" target="_blank" href="https://github.com/michael-kusdya/javascript-calculator">View Source</a>
 						</div>
@@ -135,7 +140,7 @@
 					<div class="caption">
 						<div class="blur"></div>
 						<div class="caption-text">
-							<h1>Wikipedia Viewer</h1>
+							<h1 class="project-title">Wikipedia Viewer</h1>
 							<a class="btn btn-primary" target="_blank" href="https://michael-kusdya.github.io/wikipedia-viewer">View Demo</a>
 							<a class="btn btn-primary" target="_blank" href="https://github.com/michael-kusdya/wikipedia-viewer">View Source</a>
 						</div>
@@ -147,7 +152,7 @@
 					<div class="caption">
 						<div class="blur"></div>
 						<div class="caption-text">
-							<h1>Coming Soon</h1>
+							<h1 class="project-title">Coming Soon</h1>
 						</div>
 					</div>
 				</li>
@@ -160,37 +165,30 @@
 	<div id="contact">
 		<div class="container">
 			<h1 id="contact-header">Contact Me</h1>
-			<form action="https://formspree.io/michael.kusdya@gmail.com" method="POST">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-md-offset-3 col-sm-offset-3">
+
+			<div class="row">
+				<div class="col-md-6">
+					<form action="https://formspree.io/michael.kusdya@gmail.com" method="POST">
 						<div class="form-group">
 							<label for="name">Name</label>
 							<input type="text" class="form-control" id="name" placeholder="Your Name" required>
 						</div>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-md-offset-3 col-sm-offset-3">
 						<div class="form-group">
 							<label for="email">Email</label>
 							<input name="_replyto" type="email" class="form-control" id="email" placeholder="Your Email" required>
 						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 col-md-offset-3 col-sm-offset-3">
 						<div class="form-group">
 							<label for="message">Message</label>
 							<textarea id="message" name="msg" class="form-control" rows="4" placeholder="Your Message" required></textarea>
 						</div>
 						<button input type="submit" value="Send" class="btn btn-default center" id="submit-btn">Submit</button>
-
-					</div>
+					</form>
 				</div>
-			</form>
+				<div class="col-md-6">
+					<h1>Get In Touch</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis repellat corrupti reiciendis doloribus, aut? Quae necessitatibus saepe quisquam delectus quos! Accusamus, illum ab minus minima natus porro soluta non rem.</p>
+				</div>
+			</div>
 
 		</div>
 	</div>
