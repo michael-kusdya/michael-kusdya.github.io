@@ -1,0 +1,24 @@
+body {
+  background: #ebebeb; }
+
+#skills {
+  font-size: 6em;
+  text-align: center;
+  margin: auto;
+  padding: 50px 80px; }
+  #skills h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px; }
+  #skills .row {
+    padding-bottom: 50px; }
+  #skills i {
+    margin: 15px; }
+
+#portfolio {
+  background-color: #79C5FF;
+  height: auto;
+  overflow: auto; }
+  #portfolio h1 {
+    color: white;
+    font-weight: 700; }
