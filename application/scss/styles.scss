@@ -133,7 +133,7 @@ hr {
         font-weight: 700;
         margin: 50px 0 30px 0;
     }
-    .project-title{
+    .project-title {
         font-weight: 700;
         letter-spacing: 2px;
     }
@@ -205,8 +205,22 @@ hr {
         text-align: center;
         margin: 50px 0;
     }
+    #contact-text {
+        font-size: 2em;
+        text-align: center;
+        p {
+            @media(max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+    .contact-icon {
+        font-size: 2em;
+        margin: 20px;
+    }
     #submit-btn {
         background: #3cc4d1;
+        width: 100%;
     }
     #submit-btn:hover,
     #submit-btn:focus {
@@ -234,5 +248,6 @@ footer {
     }
     a:hover {
         color: #3cc4d1;
+        text-decoration: none;
     }
 }

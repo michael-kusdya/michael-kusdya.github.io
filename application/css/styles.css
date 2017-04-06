@@ -167,17 +167,30 @@ hr {
     text-align: center;
     /*   top: 20px; */ }
 
-#contact {
-  padding: 60px 0; }
-  #contact #contact-header {
-    font-weight: 700;
-    text-align: center; }
-  #contact #submit-btn {
-    background: #3cc4d1; }
-  #contact #submit-btn:hover,
-  #contact #submit-btn:focus {
-    background: #309ca7;
-    color: white; }
+#contact #contact-header {
+  font-weight: 700;
+  text-align: center;
+  margin: 50px 0; }
+
+#contact #contact-text {
+  font-size: 2em;
+  text-align: center; }
+  @media (max-width: 991px) {
+    #contact #contact-text p {
+      display: none; } }
+
+#contact .contact-icon {
+  font-size: 2em;
+  margin: 20px; }
+
+#contact #submit-btn {
+  background: #3cc4d1;
+  width: 100%; }
+
+#contact #submit-btn:hover,
+#contact #submit-btn:focus {
+  background: #309ca7;
+  color: white; }
 
 .btn {
   color: white;
