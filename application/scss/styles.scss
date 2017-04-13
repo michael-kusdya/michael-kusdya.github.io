@@ -139,66 +139,117 @@ hr {
     }
 }
 
-.caption-style-2 {
-    list-style-type: none;
+.grid {
+    padding: 20px 20px 100px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
     text-align: center;
-    padding: 0px;
     li {
         display: inline-block;
-        padding: 0px;
+        width: 440px;
+        margin: 0;
+        padding: 20px;
+        text-align: left;
         position: relative;
-        overflow: hidden;
-        margin: 20px;
     }
-    li:hover .caption {
-        opacity: 1;
-        transform: translateY(-100px);
-        -webkit-transform: translateY(-100px);
-        -moz-transform: translateY(-100px);
-        -ms-transform: translateY(-100px);
-        -o-transform: translateY(-100px);
+    figure {
+        margin: 0;
+        display: table;
+        img {
+            max-width: 100%;
+            display: block;
+            position: relative;
+        }
     }
-    img {
-        padding: 0px;
-        float: left;
-        z-index: 4;
-        width: 400px;
-        height: 300px;
-        /*   margin:20px; */
-    }
-    .caption {
-        cursor: pointer;
-        position: absolute;
-        opacity: 0;
-        top: 300px;
-        -webkit-transition: all 0.15s ease-in-out;
-        -moz-transition: all 0.15s ease-in-out;
-        -o-transition: all 0.15s ease-in-out;
-        -ms-transition: all 0.15s ease-in-out;
-        transition: all 0.15s ease-in-out;
-    }
-    .blur {
-        background-color: rgba(0, 0, 0, 0.7);
-        height: 300px;
-        width: 400px;
-        z-index: 5;
-        position: absolute;
-    }
-    .caption-text h1 {
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-    .caption-text {
-        z-index: 10;
-        color: #fff;
-        position: absolute;
-        width: 400px;
-        height: 300px;
+    figcaption {
+        padding: 20px;
+        background: #2c3f52;
+        color: #ed4e6e;
+        display: table-caption;
+        caption-side: bottom;
         text-align: center;
-        /*   top: 20px; */
+        .project-title {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        a {
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 2px;
+            display: inline-block;
+            color: #fff;
+        }
     }
 }
 
+@media screen and (max-width: 31.5em) {
+    .grid {
+        padding: 10px 10px 100px 10px;
+        li {
+            width: 100%;
+            min-width: 300px;
+        }
+    }
+}
+
+// .projects-grid {
+//     list-style-type: none;
+//     text-align: center;
+//     padding: 0px;
+//     li {
+//         display: inline-block;
+//         padding: 0px;
+//         position: relative;
+//         overflow: hidden;
+//         margin: 20px;
+//     }
+//     li:hover .caption {
+//         opacity: 1;
+//         transform: translateY(-100px);
+//         -webkit-transform: translateY(-100px);
+//         -moz-transform: translateY(-100px);
+//         -ms-transform: translateY(-100px);
+//         -o-transform: translateY(-100px);
+//     }
+//     img {
+//         padding: 0px;
+//         float: left;
+//         z-index: 4;
+//         /*   margin:20px; */
+//     }
+//     .caption {
+//         cursor: pointer;
+//         position: absolute;
+//         opacity: 0;
+//         top: 300px;
+//         -webkit-transition: all 0.15s ease-in-out;
+//         -moz-transition: all 0.15s ease-in-out;
+//         -o-transition: all 0.15s ease-in-out;
+//         -ms-transition: all 0.15s ease-in-out;
+//         transition: all 0.15s ease-in-out;
+//         width: 100%
+//     }
+//     .blur {
+//         background-color: rgba(0, 0, 0, 0.7);
+//         z-index: 5;
+//         position: absolute;
+//     }
+//     .caption-text h1 {
+//         text-transform: uppercase;
+//         font-size: 18px;
+//     }
+//     .caption-text {
+//         z-index: 10;
+//         color: #fff;
+//         position: absolute;
+//         text-align: center;
+//         /*   top: 20px; */
+//     }
+// }
 #contact {
     #contact-header {
         font-weight: 700;
