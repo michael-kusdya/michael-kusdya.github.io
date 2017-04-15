@@ -196,60 +196,6 @@ hr {
     }
 }
 
-// .projects-grid {
-//     list-style-type: none;
-//     text-align: center;
-//     padding: 0px;
-//     li {
-//         display: inline-block;
-//         padding: 0px;
-//         position: relative;
-//         overflow: hidden;
-//         margin: 20px;
-//     }
-//     li:hover .caption {
-//         opacity: 1;
-//         transform: translateY(-100px);
-//         -webkit-transform: translateY(-100px);
-//         -moz-transform: translateY(-100px);
-//         -ms-transform: translateY(-100px);
-//         -o-transform: translateY(-100px);
-//     }
-//     img {
-//         padding: 0px;
-//         float: left;
-//         z-index: 4;
-//         /*   margin:20px; */
-//     }
-//     .caption {
-//         cursor: pointer;
-//         position: absolute;
-//         opacity: 0;
-//         top: 300px;
-//         -webkit-transition: all 0.15s ease-in-out;
-//         -moz-transition: all 0.15s ease-in-out;
-//         -o-transition: all 0.15s ease-in-out;
-//         -ms-transition: all 0.15s ease-in-out;
-//         transition: all 0.15s ease-in-out;
-//         width: 100%
-//     }
-//     .blur {
-//         background-color: rgba(0, 0, 0, 0.7);
-//         z-index: 5;
-//         position: absolute;
-//     }
-//     .caption-text h1 {
-//         text-transform: uppercase;
-//         font-size: 18px;
-//     }
-//     .caption-text {
-//         z-index: 10;
-//         color: #fff;
-//         position: absolute;
-//         text-align: center;
-//         /*   top: 20px; */
-//     }
-// }
 #contact {
     #contact-header {
         font-weight: 700;
