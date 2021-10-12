@@ -124,7 +124,7 @@ hr {
   text-align: center; }
   .grid li {
     display: inline-block;
-    width: 380px;
+    width: 440px;
     margin: 0;
     padding: 20px;
     text-align: left;
@@ -147,7 +147,9 @@ hr {
       margin: 0;
       padding: 0;
       color: #fff;
-      text-transform: uppercase;
+      text-transform: uppercase; }
+    .grid figcaption .project-subtitle {
+      color: #fff;
       margin-bottom: 10px; }
     .grid figcaption a {
       text-align: center;
